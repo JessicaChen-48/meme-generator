@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- BANNER -->
+
+<div id="top-banner">
+<h1>MEME GENERATOR</h1>
+<img class="ms banner-img img-left" src="banner_images/img3.png" alt="">
+<img class="me banner-img img-right" src="banner_images/img1.png" alt="">
+</div>
+
+
+<!-- INPUT -->
+
+    <form>
+        <div class="container">
+
+            <div class="form-group row">
+                <label for="img" class="col-lg-2 field-name col-form-label">Image URL:</label>
+            <div class="col-lg-8">
+                <input type="text"  id="img">
+            </div>
+            </div>
+           
+            <div class="form-group row">
+                <label for="top" class="col-lg-2 field-name col-form-label">Top Text:</label>
+            <div class="col-lg-8">
+                <input type="text"  id="top">
+            </div>
+            </div>
+        
+            <div class="form-group row">
+                <label for="bottom" class="col-lg-2 field-name col-form-label">Bottom Text: </label>
+            <div class="col-lg-8">
+                <input type="text"  id="bottom">
+            </div>
+            </div>
+    
+        </div>
+
+        <div class="btn-submit">
+            <input class="btn btn-sub" type="submit">
+        </div>
+    </form>
+
+   
+<!-- IMAGE FIELD -->
+
+<div class="col-6">
+
+
+</div>
+
+
+
+<script src="index.js" charset="utf-8"></script>
+</body>
+</html>
+
+
+
+
+<!--TO DO
+
+SUBMIT BUTTON -
+    what will this button do?
+    add js event listener?
+
+MEME IMAGES -
+    how will I be able to add mulitple? (col-6?)
+    image - absolute, text relative?
+
+DELETE -
+    js event listener for hover/click?
+    
+-->
