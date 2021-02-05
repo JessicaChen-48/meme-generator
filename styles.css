@@ -1,11 +1,10 @@
 body {
     margin: 0;
-    background-color: lightcoral
 }
 
 
 /*** TOP BANNER ***/
-/* media break at 1300px wide to remove banner images*/
+
 #top-banner {
     width: 100%;
     height: 350px;
@@ -17,7 +16,8 @@ h1 {
     text-align: center;
     font-size: 7rem;
     background-color: darkgrey;
-    color: whitesmoke;
+    color: white;
+    -webkit-text-stroke: 3px black;
     margin: 0;
     padding: 5% 0;
 }
@@ -56,7 +56,53 @@ form {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-input {
+input[type=text] {
     width: 100%;
 }
 
+.btn-submit {
+    padding-top: 1%;
+    padding-left: 33%;
+}
+
+.btn-sub {
+    width:50%;
+}
+
+
+/*** MEMES GO HERE ***/
+
+.holding-div {
+    position: relative;
+    width: 45%;
+    padding: 1%;
+    width: 50%;
+}
+
+.meme-image {
+    width: 100%;
+    max-height: 600px;
+}
+
+.text-overlay {
+    color: white;
+    font-size: 2rem;
+    font-family: "Impact", "Arial", sans-serif;
+    position: absolute;
+    -webkit-text-stroke: 2px black;
+    text-align: center;
+}
+
+.top-position {
+    top: 1%;
+    right: 1.25%;
+    left: 1.25%;
+    padding: .5%
+}
+
+.bottom-position {
+    bottom: 2.5%;
+    right: 1.25%;
+    left: 1.25%;
+    padding: .5%
+}
