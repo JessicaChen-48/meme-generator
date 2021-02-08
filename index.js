@@ -21,20 +21,13 @@ form.addEventListener("submit", function (e) {
     e.preventDefault();
 
     // validate image url
-    let validEnding = ["gif", "jpeg", "jpg", "png"]
-    let splitImgLink = imgLink.value.split(".")
-
-    if (!validEnding.includes(splitImgLink[splitImgLink.length-1])) {
+    if (checkLink(imgLink.value)) {
         alert("Not valid image!");
         imgLink.value = "";
     } else {
 
-
     // check for empty fields
-    if (imgLink.value === "" && topInput.value === "" && bottomInput.value === "") {
-        alert("You didn't put anything in!")
-    }
-    else if (topInput.value === "" && bottomInput.value === "") {
+    if (topInput.value === "" && bottomInput.value === "") {
         alert("At least one text field required!")
     } else {
 
@@ -58,7 +51,6 @@ form.addEventListener("submit", function (e) {
     bottomText.classList.add("text-overlay", "bottom-position");
     holdingDiv.append(bottomText);
     
-
     // clear the fields
     imgLink.value = "";
     topInput.value = "";
@@ -68,18 +60,16 @@ form.addEventListener("submit", function (e) {
 });
 
 // DELETE THE MEMES
-
 imageArea.addEventListener("click", function (e) {
     if (e.target.tagName = "IMG") {
         e.target.parentElement.remove();
-        e.target.nextSibling.remove();
-        e.target.nextSibling.remove();
-        e.target.remove();
     }
-})
+});
 
-// CHECK THE IMAGE
+// CHECK URL
+function checkLink(url) {
+    let validEnding = ["gif", "jpeg", "jpg", "png"];
+    let splitImgLink = url.split(".");
 
-function checkImage(url) {
-    return(url.match(/\.(jpeg|jpg|png)$/) !== null)
+    return !(validEnding.includes(splitImgLink[splitImgLink.length-1]))
 }
