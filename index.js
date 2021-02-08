@@ -40,7 +40,7 @@ form.addEventListener("submit", function (e) {
 
     // create the image and text
     const holdingDiv = document.createElement("div")
-    holdingDiv.classList.add("holding-div")
+    holdingDiv.classList.add("holding-div", "col-6")
     imageArea.append(holdingDiv);
 
     const memeImg = document.createElement("img");
@@ -70,7 +70,8 @@ form.addEventListener("submit", function (e) {
 // DELETE THE MEMES
 
 imageArea.addEventListener("click", function (e) {
-    if (e.target.tagName === "IMG") {
+    if (e.target.tagName = "IMG") {
+        e.target.parentElement.remove();
         e.target.nextSibling.remove();
         e.target.nextSibling.remove();
         e.target.remove();
