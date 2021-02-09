@@ -45,6 +45,19 @@ right: 5%;
         display: none;
     }
 }
+
+@media (max-width: 1150px) {
+    #top-banner {
+        height: 250px;
+    }
+}   
+
+@media (max-width: 825px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
 /*** INPUT FIELDS ***/
 
 form {
@@ -83,11 +96,12 @@ input[type=text] {
 
 .holding-div {
     position: relative;
+
 }
 
 .meme-image {
     max-width: 100%;
-    margin: 1%;
+    padding: 1%;
 }
 
 .text-overlay {
