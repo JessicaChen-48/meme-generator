@@ -2,11 +2,11 @@
 // RANDOMIZED TOP BANNER IMAGE 
 var randomImg1 = Math.floor((Math.random() * 5)+1);
 var bannerImg1 = "Banner_images/img" + randomImg1 + ".png";
-document.querySelectorAll(".img-left")[0].setAttribute("src", bannerImg1)
+document.querySelector(".img-left").setAttribute("src", bannerImg1)
 
 var randomImg2 = Math.floor((Math.random() * 5)+1);
 var bannerImg2 = "Banner_images/img" + randomImg2 + ".png";
-document.querySelectorAll(".img-right")[0].setAttribute("src", bannerImg2)
+document.querySelector(".img-right").setAttribute("src", bannerImg2)
 
 // MAKE THE MEMES
 const form = document.querySelector("form")
@@ -61,7 +61,7 @@ form.addEventListener("submit", function (e) {
 
 // DELETE THE MEMES
 imageArea.addEventListener("click", function (e) {
-    if (e.target.tagName = "IMG") {
+    if (e.target.className = "meme-image") {
         e.target.parentElement.remove();
     }
 });
