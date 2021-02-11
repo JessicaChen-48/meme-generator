@@ -33,7 +33,7 @@ form.addEventListener("submit", function (e) {
 
     // create the image and text
     const holdingDiv = document.createElement("div")
-    holdingDiv.classList.add("holding-div", "col-6")
+    holdingDiv.classList.add("holding-div")
     imageArea.append(holdingDiv);
 
     const memeImg = document.createElement("img");
@@ -45,6 +45,8 @@ form.addEventListener("submit", function (e) {
     topText.innerText = topInput.value;
     topText.classList.add("text-overlay", "top-position")
     holdingDiv.append(topText)
+
+    console.log(memeImg.width, memeImg.clientWidth, topText.width, topText.clientWidth)
 
     const bottomText = document.createElement("div");
     bottomText.innerText = bottomInput.value;

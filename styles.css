@@ -92,11 +92,11 @@ input[type=text] {
     flex-direction: row;
     align-content: space-evenly;
     flex-wrap: wrap;
+    width: 65%;
 }
 
 .holding-div {
     position: relative;
-
 }
 
 .meme-image {
@@ -111,6 +111,7 @@ input[type=text] {
     position: absolute;
     -webkit-text-stroke: 2px black;
     text-align: center;
+    margin: auto;
 }
 
 .top-position {
@@ -126,3 +127,4 @@ input[type=text] {
     left: 1.25%;
     padding: .5%
 }
+
